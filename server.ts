@@ -151,7 +151,7 @@ app.post("/api/enhance-prompt", async (req, res) => {
     if (!prompt) return res.status(400).json({ error: "Prompt is required" });
 
     const response = await ai.models.generateContent({
-      model: "gemini-2.5-pro-preview-06-05",
+      model: "gemini-2.0-flash",
       contents: `You are an expert Hollywood film director. Expand this prompt for Veo 3 AI video generation.
 
 User prompt: "${prompt}"
